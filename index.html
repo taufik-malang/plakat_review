@@ -268,7 +268,7 @@ src="https://www.facebook.com/tr?id=GANTI_PIXEL_ID_KAMU&ev=PageView&noscript=1"/
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
-  .product-card {
+    .product-card {
     background: #fff;
     border: 2px solid #E2E8F0;
     border-radius: 24px;
@@ -276,6 +276,9 @@ src="https://www.facebook.com/tr?id=GANTI_PIXEL_ID_KAMU&ev=PageView&noscript=1"/
     text-align: center;
     position: relative;
     transition: all 0.3s;
+    display: flex;             /* TAMBAHKAN INI */
+    flex-direction: column;    /* TAMBAHKAN INI */
+    height: 100%;              /* TAMBAHKAN INI */
   }
   .product-card:hover { border-color: var(--primary); transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
   .product-card.featured { border-color: var(--primary); box-shadow: 0 20px 40px rgba(255,107,0,0.15); }
@@ -294,6 +297,7 @@ src="https://www.facebook.com/tr?id=GANTI_PIXEL_ID_KAMU&ev=PageView&noscript=1"/
   .product-features {
     text-align: left; margin: 24px 0;
     display: flex; flex-direction: column; gap: 10px;
+    flex-grow: 1;              /* TAMBAHKAN INI */
   }
   .product-features li {
     list-style: none; font-size: 14px;
@@ -302,7 +306,7 @@ src="https://www.facebook.com/tr?id=GANTI_PIXEL_ID_KAMU&ev=PageView&noscript=1"/
   .product-features li::before {
     content: "✓"; color: var(--green); font-weight: 800; flex-shrink: 0;
   }
-  .btn-block { width: 100%; justify-content: center; }
+    .btn-block { width: 100%; justify-content: center; margin-top: auto; } /* TAMBAHKAN margin-top: auto */
 
   /* ===== TESTIMONIALS ===== */
   .testi-grid {
